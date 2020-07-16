@@ -22,7 +22,6 @@ int searchAndCountWordInLine(char *wordToFind, char *line) {
   return count;
 }
 
-
 int searchAndCountWordInLines(char *wordToFind, char* filename) {
   int i, count = 0;
   char **lines = readLines(filename);
