@@ -94,5 +94,27 @@ void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_li
     TEST_ASSERT_EQUAL(5, count);
 }
 
+void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_lines_expect_count_0(void)
+{
+    int count;
+    char *filename = "C:/PANG/Projects/C/SearchAndCountWord/test/data/my_file.txt";
+    char *word = "sun";
+    char *lines[] = {
+      "hl, my friend",
+      "Helo from the other side",
+      "hELLO, are you there h",
+      "anyone? HELLO",
+      "I am very hapy, TDD makes me hay",
+      "Not doing TDD makes me unhappy",
+      "Hap Sad hA sad",
+      "Sad hPY happy APPy",
+      "hApPy and SAD",
+      NULL
+    };
+    //Mock
+    readLines_ExpectAndReturn(filename, (char**)&lines);
 
+    count = searchAndCountWordInLines(word, filename);
+    TEST_ASSERT_EQUAL(0, count);
+}
 
