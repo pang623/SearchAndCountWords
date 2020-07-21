@@ -3,6 +3,7 @@
 #include "ReadLine.h"
 #include <stdio.h>
 #include <ctype.h>
+#include <malloc.h>
 
 int searchAndCountWordInLine(char *wordToFind, char *line) {
   int count = 0;
@@ -23,13 +24,13 @@ int searchAndCountWordInLine(char *wordToFind, char *line) {
 }
 
 int searchAndCountWordInLines(char *wordToFind, char* filename) {
-  int i, count = 0;
+  int i; 
+  int count = 0;
   char **lines = readLines(filename);
 
   //lines[0] <=== accessing the first line
   for(i = 0; lines[i] != NULL; i++) {
     count += searchAndCountWordInLine(wordToFind, lines[i]);
   }
-  
   return count;
 }

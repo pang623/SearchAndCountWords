@@ -22,5 +22,6 @@ char **readLines(char *fileName) {
     i++;
     }
   
+  lines[i] = NULL;                          //force the line after the last line to be NULL
   return lines;
 }

@@ -112,7 +112,7 @@ void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_li
       NULL
     };
     //Mock
-    readLines_ExpectAndReturn(filename, (char**)&lines);
+    readLines_ExpectAndReturn(filename, (char **)&lines);
 
     count = searchAndCountWordInLines(word, filename);
     TEST_ASSERT_EQUAL(0, count);

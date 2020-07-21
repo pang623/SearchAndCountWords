@@ -7,5 +7,3 @@ Not doing TDD makes me unhappy
 Hap Sad hA sad
 Sad hPY happy APPy
 hApPy and SAD
-
- 
