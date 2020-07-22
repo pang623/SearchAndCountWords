@@ -49,7 +49,7 @@ void test_SearchAndCountWordInLine_given_key_as_wordtofind_expect_count_0(void)
 void test_SearchAndCountWordInLines_given_happy_as_wordtofind_and_a_file_with_9_lines_expect_count_3(void)
 {
     int count;
-    char *filename = "C:/PANG/Projects/C/SearchAndCountWord/test/data/my_file.txt";
+    char *filename = "./test/data/my_file.txt";
     char *word = "happy";
     char *lines[] = {
       "hl, my friend",
@@ -73,7 +73,7 @@ void test_SearchAndCountWordInLines_given_happy_as_wordtofind_and_a_file_with_9_
 void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_lines_expect_count_5(void)
 {
     int count;
-    char *filename = "C:/PANG/Projects/C/SearchAndCountWord/test/data/my_file.txt";
+    char *filename = "./test/data/my_file.txt";
     char *word = "hap";
     char *lines[] = {
       "hl, my friend",
@@ -97,7 +97,7 @@ void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_li
 void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_lines_expect_count_0(void)
 {
     int count;
-    char *filename = "C:/PANG/Projects/C/SearchAndCountWord/test/data/my_file.txt";
+    char *filename = "./test/data/my_file.txt";
     char *word = "sun";
     char *lines[] = {
       "hl, my friend",
