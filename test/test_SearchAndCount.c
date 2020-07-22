@@ -24,8 +24,8 @@ void test_SearchAndCountWordInLine_given_compute_as_wordtofind_line_contains_cap
 
 void test_SearchAndCountWordInLine_given_key_as_wordtofind_expect_count_3(void)
 {
-    int count = searchAndCountWordInLine("key", "There are two keys, key1 and key");
-    TEST_ASSERT_EQUAL(3, count);
+    int count = searchAndCountWordInLine("key", "There are two keys, keykeykey1key and key");
+    TEST_ASSERT_EQUAL(6, count);
 }
 
 void test_SearchAndCountWordInLine_given_balls_as_wordtofind_expect_count_0(void)
@@ -56,7 +56,7 @@ void test_SearchAndCountWordInLines_given_happy_as_wordtofind_and_a_file_with_9_
       "Helo from the other side",
       "hELLO, are you there h",
       "anyone? HELLO",
-      "I am very hapy, TDD makes me hay",
+      "I am very haphapy, TDD makes me hay",
       "Not doing TDD makes me unhappy",
       "Hap Sad hA sad",
       "Sad hPY happy APPy",
@@ -80,7 +80,7 @@ void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_li
       "Helo from the other side",
       "hELLO, are you there h",
       "anyone? HELLO",
-      "I am very hapy, TDD makes me hay",
+      "I am very haphapy, TDD makes me hay",
       "Not doing TDD makes me unhappy",
       "Hap Sad hA sad",
       "Sad hPY happy APPy",
@@ -91,7 +91,7 @@ void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_li
     readLines_ExpectAndReturn(filename, (char**)&lines);
 
     count = searchAndCountWordInLines(word, filename);
-    TEST_ASSERT_EQUAL(5, count);
+    TEST_ASSERT_EQUAL(6, count);
 }
 
 void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_lines_expect_count_0(void)
@@ -104,7 +104,7 @@ void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_li
       "Helo from the other side",
       "hELLO, are you there h",
       "anyone? HELLO",
-      "I am very hapy, TDD makes me hay",
+      "I am very haphapy, TDD makes me hay",
       "Not doing TDD makes me unhappy",
       "Hap Sad hA sad",
       "Sad hPY happy APPy",
