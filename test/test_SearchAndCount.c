@@ -22,7 +22,7 @@ void test_SearchAndCountWordInLine_given_compute_as_wordtofind_line_contains_cap
     TEST_ASSERT_EQUAL(2, count);
 }
 
-void test_SearchAndCountWordInLine_given_key_as_wordtofind_expect_count_3(void)
+void test_SearchAndCountWordInLine_given_key_as_wordtofind_expect_count_6(void)
 {
     int count = searchAndCountWordInLine("key", "There are two keys, keykeykey1key and key");
     TEST_ASSERT_EQUAL(6, count);
@@ -70,7 +70,7 @@ void test_SearchAndCountWordInLines_given_happy_as_wordtofind_and_a_file_with_9_
     TEST_ASSERT_EQUAL(3, count);
 }
 
-void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_lines_expect_count_5(void)
+void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_lines_expect_count_6(void)
 {
     int count;
     char *filename = "./test/data/my_file.txt";
@@ -94,7 +94,7 @@ void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_li
     TEST_ASSERT_EQUAL(6, count);
 }
 
-void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_lines_expect_count_0(void)
+void test_SearchAndCountWordInLines_given_sun_as_wordtofind_and_a_file_with_9_lines_expect_count_0(void)
 {
     int count;
     char *filename = "./test/data/my_file.txt";

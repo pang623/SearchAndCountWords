@@ -20,14 +20,14 @@ void test_SearchAndCountWordInLines_given_happy_as_wordtofind_and_a_file_with_9_
     TEST_ASSERT_EQUAL(3, count);
 }
 
-void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_lines_expect_count_5(void)
+void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_lines_expect_count_6(void)
 {
     int count;
     char *filename = "./test/data/my_file.txt";
     char *word = "hap";
     
     count = searchAndCountWordInLines(word, filename);
-    TEST_ASSERT_EQUAL(5, count);
+    TEST_ASSERT_EQUAL(6, count);
 }
 
 void test_SearchAndCountWordInLines_given_hello_as_wordtofind_and_a_file_with_9_lines_expect_count_2(void)

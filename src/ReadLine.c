@@ -10,7 +10,7 @@ char **readLines(char *fileName) {
   char buffer[1024];
   int i = 0;
   FILE *fileHandler;
-  
+
   fileHandler = fopen(fileName, "r");
   if(fileHandler == NULL) {
     printf("Error opening file!\n");
@@ -21,7 +21,7 @@ char **readLines(char *fileName) {
     lines[i] = strdup(buffer);
     i++;
     }
-  
+
   lines[i] = NULL;                          //force the line after the last line to be NULL
   return lines;
 }
