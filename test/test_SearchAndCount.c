@@ -66,7 +66,7 @@ void test_SearchAndCountWordInLines_given_happy_as_wordtofind_and_a_file_with_9_
     //Mock
     readLines_ExpectAndReturn(filename, (char**)&lines);
 
-    count = searchAndCountWordInLines(word, filename);
+    count = searchAndCountWordInLines(word, filename, 0);
     TEST_ASSERT_EQUAL(3, count);
 }
 
@@ -90,7 +90,7 @@ void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_li
     //Mock
     readLines_ExpectAndReturn(filename, (char**)&lines);
 
-    count = searchAndCountWordInLines(word, filename);
+    count = searchAndCountWordInLines(word, filename, 0);
     TEST_ASSERT_EQUAL(6, count);
 }
 
@@ -114,7 +114,7 @@ void test_SearchAndCountWordInLines_given_sun_as_wordtofind_and_a_file_with_9_li
     //Mock
     readLines_ExpectAndReturn(filename, (char **)&lines);
 
-    count = searchAndCountWordInLines(word, filename);
+    count = searchAndCountWordInLines(word, filename, 0);
     TEST_ASSERT_EQUAL(0, count);
 }
 

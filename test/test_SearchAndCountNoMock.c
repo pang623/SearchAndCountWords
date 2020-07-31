@@ -16,7 +16,7 @@ void test_SearchAndCountWordInLines_given_happy_as_wordtofind_and_a_file_with_9_
     char *filename = "./test/data/my_file.txt";
     char *word = "happy";
 
-    count = searchAndCountWordInLines(word, filename);
+    count = searchAndCountWordInLines(word, filename, 1);
     TEST_ASSERT_EQUAL(3, count);
 }
 
@@ -26,7 +26,7 @@ void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_li
     char *filename = "./test/data/my_file.txt";
     char *word = "hap";
     
-    count = searchAndCountWordInLines(word, filename);
+    count = searchAndCountWordInLines(word, filename, 1);
     TEST_ASSERT_EQUAL(6, count);
 }
 
@@ -36,7 +36,7 @@ void test_SearchAndCountWordInLines_given_hello_as_wordtofind_and_a_file_with_9_
     char *filename = "./test/data/my_file.txt";
     char *word = "hello";
 
-    count = searchAndCountWordInLines(word, filename);
+    count = searchAndCountWordInLines(word, filename, 1);
     TEST_ASSERT_EQUAL(2, count);
 }
 
@@ -46,7 +46,7 @@ void test_SearchAndCountWordInLines_given_he_as_wordtofind_and_a_file_with_9_lin
     char *filename = "./test/data/my_file.txt";
     char *word = "he";
 
-    count = searchAndCountWordInLines(word, filename);
+    count = searchAndCountWordInLines(word, filename, 1);
     TEST_ASSERT_EQUAL(6, count);
 }
 
@@ -56,6 +56,6 @@ void test_SearchAndCountWordInLines_given_sun_as_wordtofind_and_a_file_with_9_li
     char *filename = "./test/data/my_file.txt";
     char *word = "sun";
 
-    count = searchAndCountWordInLines(word, filename);
+    count = searchAndCountWordInLines(word, filename, 1);
     TEST_ASSERT_EQUAL(0, count);
 }

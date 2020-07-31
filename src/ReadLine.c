@@ -23,5 +23,7 @@ char **readLines(char *fileName) {
     }
 
   lines[i] = NULL;                          //force the line after the last line to be NULL
+  fclose(fileHandler);
+  
   return lines;
 }
