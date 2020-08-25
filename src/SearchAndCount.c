@@ -8,7 +8,7 @@
 int searchAndCountWordInLine(char *wordToFind, char *line) {
   int count = 0;
   int wordIndex = 0;
-  
+
   for(int lineIndex = 0; lineIndex < strlen(line); lineIndex++) {
     if(tolower(line[lineIndex]) == tolower(wordToFind[wordIndex])) {
       wordIndex++;
@@ -23,8 +23,8 @@ int searchAndCountWordInLine(char *wordToFind, char *line) {
   return count;
 }
 
-int searchAndCountWordInLines(char *wordToFind, char* filename, int freeMemorySel) {
-  int i; 
+int searchAndCountWordInLines(char *wordToFind, char *filename) {
+  int i;
   int count = 0;
   char **lines = readLines(filename);
 
@@ -32,7 +32,6 @@ int searchAndCountWordInLines(char *wordToFind, char* filename, int freeMemorySe
   for(i = 0; lines[i] != NULL; i++) {
     count += searchAndCountWordInLine(wordToFind, lines[i]);
   }
-  if(freeMemorySel)
-    free(lines);
+  free(lines);
   return count;
 }

@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 char **readLines(char *fileName) {
   char **lines = malloc(sizeof(char *) * 1024);
   char buffer[1024];
@@ -24,6 +23,6 @@ char **readLines(char *fileName) {
 
   lines[i] = NULL;                          //force the line after the last line to be NULL
   fclose(fileHandler);
-  
+
   return lines;
 }

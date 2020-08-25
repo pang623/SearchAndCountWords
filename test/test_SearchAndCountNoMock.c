@@ -12,50 +12,50 @@ void tearDown(void)
 
 void test_SearchAndCountWordInLines_given_happy_as_wordtofind_and_a_file_with_9_lines_expect_count_3(void)
 {
-    int count;
-    char *filename = "./test/data/my_file.txt";
-    char *word = "happy";
+  int count;
+  char *filename = "./test/data/my_file.txt";
+  char *word = "happy";
 
-    count = searchAndCountWordInLines(word, filename, 1);
-    TEST_ASSERT_EQUAL(3, count);
+  count = searchAndCountWordInLines(word, filename);
+  TEST_ASSERT_EQUAL(3, count);
 }
 
 void test_SearchAndCountWordInLines_given_hap_as_wordtofind_and_a_file_with_9_lines_expect_count_6(void)
 {
-    int count;
-    char *filename = "./test/data/my_file.txt";
-    char *word = "hap";
-    
-    count = searchAndCountWordInLines(word, filename, 1);
-    TEST_ASSERT_EQUAL(6, count);
+  int count;
+  char *filename = "./test/data/my_file.txt";
+  char *word = "hap";
+
+  count = searchAndCountWordInLines(word, filename);
+  TEST_ASSERT_EQUAL(6, count);
 }
 
 void test_SearchAndCountWordInLines_given_hello_as_wordtofind_and_a_file_with_9_lines_expect_count_2(void)
 {
-    int count;
-    char *filename = "./test/data/my_file.txt";
-    char *word = "hello";
+  int count;
+  char *filename = "./test/data/my_file.txt";
+  char *word = "hello";
 
-    count = searchAndCountWordInLines(word, filename, 1);
-    TEST_ASSERT_EQUAL(2, count);
+  count = searchAndCountWordInLines(word, filename);
+  TEST_ASSERT_EQUAL(2, count);
 }
 
 void test_SearchAndCountWordInLines_given_he_as_wordtofind_and_a_file_with_9_lines_expect_count_6(void)
 {
-    int count;
-    char *filename = "./test/data/my_file.txt";
-    char *word = "he";
+  int count;
+  char *filename = "./test/data/my_file.txt";
+  char *word = "he";
 
-    count = searchAndCountWordInLines(word, filename, 1);
-    TEST_ASSERT_EQUAL(6, count);
+  count = searchAndCountWordInLines(word, filename);
+  TEST_ASSERT_EQUAL(6, count);
 }
 
 void test_SearchAndCountWordInLines_given_sun_as_wordtofind_and_a_file_with_9_lines_expect_count_0(void)
 {
-    int count;
-    char *filename = "./test/data/my_file.txt";
-    char *word = "sun";
+  int count;
+  char *filename = "./test/data/my_file.txt";
+  char *word = "sun";
 
-    count = searchAndCountWordInLines(word, filename, 1);
-    TEST_ASSERT_EQUAL(0, count);
+  count = searchAndCountWordInLines(word, filename);
+  TEST_ASSERT_EQUAL(0, count);
 }
